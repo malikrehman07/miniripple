@@ -1,0 +1,34 @@
+.terms-section {
+    background-color: var(--bg-color-2);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.terms-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.terms-section p {
+    font-size: 16px;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .terms-page {
+        padding: 2rem 1rem;
+    }
+
+    .terms-header h1 {
+        font-size: 28px;
+    }
+
+    .terms-section h2 {
+        font-size: 20px;
+    }
+}

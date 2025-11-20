@@ -1,0 +1,240 @@
+/* ========= Marketing/Auth Shell (scoped 1:1 with your original App.css) ========= */
+.marketing {
+  --primary-color: #4890EF;
+  --primary-color-light: rgba(72,144,239,0.10);
+  --primary-color-dark: rgba(72,144,239,0.30);
+  --secondary-color: #FBD020;
+  --secondary-light-color: #FEFCE8;
+
+  --gray: #A1A1A1;
+  --gray-light: #C4C4C4;
+  --gray-lighter: #C9C9C9;
+  --gray-lightest: #D3D3D3;
+  --gray-dark: #1E1E1E;
+  --gray-100: #363c49;
+
+  --normal-font-family: "Open Sans", sans-serif;
+  --base-font-family: "Outfit", sans-serif;
+  --heading-font-family: "Sora", sans-serif;
+
+  --base-font-size: 1rem; /* 16px */
+  --font-70: 4.375rem;   /* 70px */
+  --font-45: 2.8125rem;  /* 45px */
+  --font-40: 2.5rem;     /* 40px */
+  --font-24: 1.5rem;     /* 24px */
+  --font-22: 1.375rem;   /* 22px */
+  --font-20: 1.25rem;    /* 20px */
+  --font-18: 1.125rem;   /* 18px */
+  --font-16: 1rem;       /* 16px */
+  --font-12: 0.75rem;    /* 12px */
+
+  /* Light theme (default) */
+  --bg-color-1: #ffffff;
+  --bg-color-2: #f5f7fa;
+  --bg-color-3: #e6e9f0;
+  --text-color: #1a1a1a;
+  --text-secondary: #4a4a4a;
+  --border-color: #e0e0e0;
+  --card-bg: #ffffff;
+  --hover-bg: rgba(0, 0, 0, 0.05);
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  --light-color: #000;
+  --dark-color: #fff;
+
+  --para-text-color: #737373;
+
+  /* Menu */
+  --menu-bg: #F5F2F2;
+  --menu-border-color: #E5E5E5;
+  --menu-text-color: #737373;
+  --menu-selected-bg-color: var(--secondary-light-color);
+  --sign-in-bg-color: #fff;
+  --form-section-bg-color: #fff;
+
+  background-color: var(--bg-color-1);
+  color: var(--para-text-color);
+  font: normal var(--base-font-size)/1.4 var(--base-font-family);
+}
+
+/* Dark theme */
+[data-theme="dark"] .marketing {
+  --light-color: #fff;
+  --dark-color: #000;
+  --bg-color-1: #0a0f1f;
+  --bg-color-2: #131d3d;
+  --bg-color-3: #1e2a4a;
+  --text-color: #f0f0f0;
+  --text-secondary: #b0b0b0;
+  --border-color: #2a3a5c;
+  --card-bg: #131d3d;
+  --hover-bg: rgba(255, 255, 255, 0.1);
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+  --para-text-color: #9F9FA9;
+
+  /* Menu */
+  --menu-bg: rgba(255, 255, 255, 0.02);
+  --menu-border-color: rgba(255, 255, 255, 0.06);
+  --menu-text-color: var(--gray-lightest);
+  --menu-selected-bg-color: var(--secondary-light-color);
+  --sign-in-bg-color: #040b1b;
+  --form-section-bg-color: #040b1b;
+}
+
+/* local-only “globals” */
+.marketing [data-theme="light"] .plain-svg path { fill: var(--primary-color); }
+
+.marketing a { color: #FBD020; }
+.marketing a:hover { color: #FBD020; }
+.marketing a:active { color: #FBD020; }
+
+.marketing .inline-block { display: inline-block; }
+.marketing .mobile-drawer .ant-drawer-body { background-color: var(--bg-color-1); }
+
+.marketing :where(.ant-btn) { border-radius: 35px; }
+.marketing :where(.ant-btn-primary.ant-btn-color-primary) { color: #000; height: 48px; }
+
+.marketing .blue-bg { padding: 5rem 0; background-color: var(--bg-color-2); }
+
+.marketing .h1 { font: 600 var(--font-70)/1.2 var(--heading-font-family); margin-bottom: 2.5rem; }
+.marketing .h2 { font: 600 var(--font-45)/1.2 var(--heading-font-family); margin-top: 12px; margin-bottom: 20px; }
+.marketing .h3 { font: 600 var(--font-40)/1.2 var(--heading-font-family); }
+.marketing .h4 { font: 600 var(--font-24)/1.2 var(--heading-font-family); }
+.marketing .h5 { font: 600 var(--font-22)/1.2 var(--heading-font-family); }
+.marketing .h6 { font: 600 var(--font-20)/1.2 var(--heading-font-family); }
+
+.marketing .h1, .marketing .h2, .marketing .h3, .marketing .h4, .marketing .h5, .marketing .h6 { color: var(--light-color); }
+.marketing .h1 span, .marketing .h2 span, .marketing .h3 span, .marketing .h4 span, .marketing .h5 span, .marketing .h6 span { color: var(--primary-color); }
+.marketing .p { font: normal var(--font-16)/1.4 var(--base-font-family); margin-bottom: 40px; }
+.marketing .span { font: 600 var(--font-22)/1 var(--heading-font-family); }
+
+.marketing :where(.ant-btn) {
+  font: 600 var(--font-16)/1 var(--normal-font-family);
+  padding: 1rem 2.1875rem !important;
+}
+.marketing .tag-primary{
+  background-color: rgba(72, 144, 239, 0.14);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 35px;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font: 600 var(--font-12)/1 var(--base-font-family);
+}
+.marketing .tag-primary:hover,
+.marketing .tag-primary:active {
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+}
+
+.marketing .res-img { max-width: 100%; height: auto; }
+
+/* NOTE: keep this – your original marketing utility */
+.marketing .flex {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.marketing :where(.ant-btn-default),
+.marketing :where(.ant-btn-default:hover),
+.marketing :where(.ant-btn-default:active) {
+  background: var(--secondary-light-color);
+  color: var(--secondary-color);
+  border: none;
+  font-weight: 600;
+  border-bottom: 2px solid var(--secondary-color);
+}
+[data-theme="dark"] .marketing :where(.ant-btn-default),
+[data-theme="dark"] .marketing :where(.ant-btn-default:hover),
+[data-theme="dark"] .marketing :where(.ant-btn-default:active) {
+  background: linear-gradient(to right, #1b212f 10%, #373c48 80%);
+  color: var(--secondary-color);
+  border: none;
+  font-weight: 600;
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.marketing .search-area {
+  width: 450px;
+  height: 60px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid var(--menu-border-color);
+  border-radius: 35px;
+  overflow: hidden;
+  margin: 50px auto;
+}
+.marketing .search-area input {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 25px;
+  border: none;
+  outline: none;
+  color: #000;
+  font: normal 22px/1.2 var(--base-font-family);
+}
+.marketing .search-area input::placeholder {
+  color: #000;
+  font: normal 22px/1.2 var(--base-font-family);
+}
+.marketing .search-area--btn {
+  background: url('@/assets/img/search-icon.png') no-repeat center center transparent;
+  width: 68px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  font-size: 0;
+}
+.marketing .avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.marketing [data-theme="light"] .use-case-icon path { fill: var(--primary-color); }
+
+.marketing .ant-form-item-explain-error { padding-block: 10px; margin-bottom: 20px; font-size: 14px; }
+.marketing :where(.ant-input) { font-size: 14px; }
+.marketing :where(.ant-btn-variant-solid){
+  background: linear-gradient(to bottom, #FBD020 10%, #FBD020 80%);
+  transition: all 0.5s ease;
+}
+.marketing :where(.ant-btn-variant-solid:not(:disabled):not(.ant-btn-disabled):hover){
+  color: #000;
+  background: linear-gradient(to bottom, #FBD020 10%, #d8b111 80%);
+}
+.marketing .flex.justify-end { justify-content: end; }
+
+@media (max-width:1025px){
+  .marketing .h1 { font-size: 50px; }
+}
+@media (max-width:768px){
+  .marketing .h1 { font-size: 40px; }
+}
+@media (max-width:500px){
+  .marketing .h1,.marketing .h2,.marketing .h3 { font-size: 32px; }
+  .marketing .h4 { font-size: 16px; }
+}
+
+/* ---- Home helpers (your previous Home.css, prefixed) ---- */
+.marketing .home-page .benefits-section .content { max-width: 634px; margin: 0 auto 40px; text-align: center; }
+.marketing .home-page .intro-section .content { max-width: 100%; }
+.marketing .home-page .intro-section .img { max-width: 100%; }
+.marketing .home-page .intro-content { max-width: 700px; margin-inline: auto; }
+@media screen and (max-width: 768px) {
+  .marketing .home-page { overflow: hidden; }
+}
+@media screen and (max-width: 500px) {
+  .marketing .home-page .intro-section .img { max-width: 100vw; }
+  .marketing .img-section .img { margin-bottom: 40px; }
+}

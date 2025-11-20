@@ -1,0 +1,38 @@
+.support-page{}
+
+.support-page .intro-section .content{
+    max-width: 700px;
+}
+
+.support-page .benefits-section .content{
+    max-width: 725px;
+}
+
+.support-page .benefits-section .content .buttons-area{
+    margin-top: 2rem;
+}
+
+/* Force the search control to use the light scheme and explicit colors */
+.search-area {
+  background: #fff;
+  color-scheme: light;              /* prevents dark auto-theming */
+}
+
+.search-area input {
+  background: #fff;
+  color: #000;
+  -webkit-appearance: none;         /* stop native styling on WebKit */
+  appearance: none;
+}
+
+.search-area input::placeholder {
+  color: #000;
+  opacity: 0.6;
+}
+
+/* If you only want this in dark theme, keep it scoped: */
+[data-theme="dark"] .search-area,
+[data-theme="dark"] .search-area input {
+  background: #fff;
+  color: #000;
+}

@@ -1,0 +1,53 @@
+.protect-your-business-section {
+    padding: 5rem 0;
+    /*7.5rem*/
+    background-color: var(--bg-color-2);
+}
+
+.protect-your-business-section .h3 {
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+    /* 1.25rem; */
+}
+
+.protect-your-business-section .content .h4 {
+    margin-bottom: 14px;
+}
+
+.protect-your-business-section .content p {
+    font-size: var(--font-16);
+    margin-bottom: 30px;
+}
+
+
+
+@media (min-width: 1024px) {
+    .content {
+        padding-right: 1.2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .sticky-content {
+        position: sticky;
+        top: 20px;
+        /* Adjust this value based on your header height */
+        align-self: flex-start;
+        overflow-y: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .protect-your-business-section {
+        padding: 40px 0;
+    }
+
+    .protect-your-business-section .content .h4 {
+        margin-top: 0;
+        font-size: 20px;
+    }
+
+    .protect-your-business-section .panel .content {
+        margin-bottom: 40px;
+    }
+}

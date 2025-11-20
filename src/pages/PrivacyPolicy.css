@@ -1,0 +1,34 @@
+.privacy-section {
+    background-color: var(--bg-color-2);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.privacy-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.privacy-section p {
+    font-size: 16px;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .privacy-page {
+        padding: 2rem 1rem;
+    }
+
+    .privacy-header h1 {
+        font-size: 28px;
+    }
+
+    .privacy-section h2 {
+        font-size: 20px;
+    }
+}

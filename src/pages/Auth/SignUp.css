@@ -1,0 +1,217 @@
+:root{
+  --c1: #4890EF;
+  --c2: #b4b8c0;
+  --c3: #bcbdbe;
+}
+
+[data-theme="dark"] {
+  --c1: #4890EF;
+  --c2: #0a172e;
+  --c3: #060f22;
+}
+
+.sign-in-page,
+.auth-page,
+.sign-up-page {
+  overflow: hidden;
+  background-color: var(--sign-in-bg-color);
+  /* ensure the page always fills the viewport height */
+  min-height: 100vh;
+}
+
+.form-section { background-color: var(--form-section-bg-color); }
+.form-section .ant-btn { border-radius: 35px; }
+
+.auth-page h1.h1{
+  font: normal 35px/1.2 var(--heading-font-family);
+  max-width: 460px;
+  margin-inline: auto;
+}
+
+.auth-page .ellipse-area{
+  background: url('@/assets/img/auth-grid.png') no-repeat center center transparent;
+  background-size: cover;
+
+  /* make the right column fill the viewport and avoid white underneath */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* ensure base color under transparent areas of the grid/art */
+  background-color: var(--sign-in-bg-color);
+}
+
+.auth-page .img-section{
+  /* keep your artwork placement and size (prevents overlap with heading) */
+  background: url('@/assets/img/authDashboard.png') no-repeat right bottom transparent;
+  background-size: 94% auto;
+
+  /* key fixes: stretch to column height so the bottom is covered */
+  flex: 1 1 auto;           /* take the remaining height in the column */
+  min-height: 100vh;        /* make sure it covers very short viewports */
+  width: 100%;
+
+  text-align: center;
+  box-sizing: border-box;
+  /* drop the 94% height so we don't introduce a short container */
+  height: auto;
+}
+
+.auth-page .img-section .logo{
+  margin-top: 62px;
+  margin-bottom: 60px;
+}
+
+.auth-form { padding: 50px 70px; }
+
+.auth-form .content{
+  border-radius: 14px;
+  background-color: var(--form-bg-light);
+  border: 1px solid var(--form-border-light);
+  padding: 40px 45px;
+  max-width: 460px;
+  margin-inline: auto;
+}
+[data-theme="dark"] .auth-form .content{
+  background-color: var(--form-bg-dark);
+  border: 1px solid var(--form-border-dark);
+}
+
+/* Inputs */
+.auth-form .form-area input[type="text"],
+.auth-form .form-area input[type="email"],
+.auth-form .form-area input[type="number"],
+.auth-form .form-area textarea,
+.auth-form .form-area .ant-input-password,
+.auth-form .form-area .ant-input-outlined.ant-input-status-error{
+  border-radius: 5px;
+  background: var(--form-input-bg-light);
+  border: 1px solid var(--form-input-border-light);
+  color: #000;
+  min-height: 49px;
+}
+[data-theme="dark"] .auth-form .form-area input[type="text"],
+[data-theme="dark"] .auth-form .form-area input[type="email"],
+[data-theme="dark"] .auth-form .form-area input[type="number"],
+[data-theme="dark"] .auth-form .form-area textarea,
+[data-theme="dark"] .auth-form .form-area .ant-input-password,
+[data-theme="dark"] .auth-form .form-area .ant-input-outlined.ant-input-status-error{
+  background: var(--form-input-bg-dark);
+  border: 1px solid var(--form-input-border-dark);
+  color: #fff;
+}
+
+.auth-form .form-area .ant-input-password > input{
+  border: none;
+  background-color: transparent;
+}
+
+/* placeholder + general text */
+.auth-form .form-area input::placeholder,
+.auth-form .form-area textarea::placeholder{
+  color: #9F9FA9;
+}
+.auth-form .form-area{
+  color: #9F9FA9;
+  font: 600 var(--font-16)/1 var(--base-font-family);
+}
+
+.auth-form .main-heading{
+  font: 600 28px/1.2 var(--heading-font-family);
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--light-color);
+}
+
+.auth-form .ant-form-item .ant-form-item-label >label{
+  color: #000;
+  font-family: var(--base-font-family);
+  font-weight: 400;
+}
+[data-theme="dark"] .auth-form .ant-form-item .ant-form-item-label >label{
+  color: #E4E4E7;
+}
+
+/* Keep-me / Forgot Password row */
+.keep-forgot-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 6px 0 18px;
+}
+.link-like{
+  background: transparent;
+  border: none;
+  color: #1677ff;
+  font: inherit;
+  cursor: pointer;
+}
+
+/* Social buttons: exact style + yellow bottom border */
+.social-btn{
+  height: 48px !important;
+  background: #21222D !important;
+  color: #fff !important;
+  border: 1px solid #4B4C5C !important;
+  font-weight: 500 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  border-radius: 35px !important;
+  /* border-bottom: 2px solid var(--secondary-color) !important; */
+}
+
+@media (max-width: 992px){
+  .auth-page .img-section{ background-size: 75%; }
+}
+@media (max-width: 768px){
+  .auth-page .img-section{
+    /* keep your original min-height feel on tablets */
+    min-height: 670px;
+  }
+}
+@media (max-width: 500px){
+  .auth-page .img-section{ background-size: 88%; }
+  .auth-form .content{ padding: 0; border: none !important; }
+}
+@media (max-width: 426px){
+  .auth-page .img-section{
+    /* ensure mobile still fills visually */
+    min-height: 490px;
+  }
+  .auth-form { padding: 50px 30px; }
+}
+
+/* .auth-form .form-area .ant-input-password .ant-input-suffix,
+.auth-form .form-area .ant-input-password .ant-input-suffix .anticon {
+  color: #fff !important;
+} */
+.auth-form .form-area .ant-input-password .ant-input-suffix svg {
+  fill: currentColor !important;
+}
+
+/* Fix for Keep Me Logged In visibility in dark mode */
+[data-theme="dark"] .ant-checkbox-wrapper,
+[data-theme="dark"] .ant-checkbox + span {
+  color: #fff !important;
+}
+
+/* Ensure checkbox itself is visible */
+[data-theme="dark"] .ant-checkbox-inner {
+  border-color: #4890EF !important;
+  background-color: transparent !important;
+}
+
+/* Fix Ant Design eye icon visibility in both light & dark themes */
+.ant-input-password-icon {
+  color: var(--eye-icon-color) !important;
+}
+
+/* Define custom color variables for light/dark modes */
+:root {
+  --eye-icon-color: #000; /* black for light mode */
+}
+
+[data-theme="dark"] {
+  --eye-icon-color: #fff; /* white for dark mode */
+}

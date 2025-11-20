@@ -1,0 +1,29 @@
+.real-time-section{
+    padding: 5rem 0 0;
+    background-color: var(--bg-color-1);
+}
+
+.real-time-section .content{
+    max-width: 530px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.real-time-section .panel-content .h4{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.real-time-section .panel-content .p{
+    margin-bottom: 1.875rem;
+}
+.real-time-panel{
+    overflow: hidden;
+    margin-bottom: 3.125rem;
+}
+
+@media (max-width: 768px) {
+    .real-time-panel{
+        margin-bottom: 20px;
+    }   
+}
+

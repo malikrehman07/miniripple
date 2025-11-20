@@ -1,0 +1,22 @@
+/* Modal body: make content scroll nicely and look like a document */
+.terms-modal .terms-modal-body {
+  max-height: min(70vh, 720px);
+  overflow: auto;
+  padding: 20px 24px;
+}
+
+/* Typography polish */
+.terms-container .terms-text h2 {
+  margin-bottom: 12px;
+}
+.terms-container .terms-text h3 {
+  margin-top: 18px;
+  margin-bottom: 6px;
+}
+.terms-container .terms-text p {
+  margin: 8px 0;
+  line-height: 1.55;
+}
+.terms-container .terms-text ul {
+  margin: 8px 0 12px;
+}

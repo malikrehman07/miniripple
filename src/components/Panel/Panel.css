@@ -1,0 +1,23 @@
+.panel {
+    padding: 1.875rem; 
+    background: var(--primary-color-light);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    border: 1px solid var(--primary-color-dark);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+[data-theme="dark"] .panel{
+    background: rgba(196, 196, 196, 0.05);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+    .panel{
+        margin-bottom: 20px;
+    }
+}

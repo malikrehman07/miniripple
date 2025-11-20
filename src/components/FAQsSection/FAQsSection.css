@@ -1,0 +1,132 @@
+.faqs-section {
+    padding: 0 0 7.5rem 0;
+}
+
+.faqs-section .content {
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 690px;
+    margin: 30px auto;
+}
+
+.faqs-section .content .h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.faqs-section .content .p{
+    margin-bottom: 3.12rem;
+}
+
+.faq-collapse {
+    width: 100%;
+    background: transparent;
+    border: none;
+}
+.faq-collapse .ant-collapse-item.ant-collapse-item-active{
+    border: 1px solid var(--primary-color) !important;
+}
+.faq-collapse .ant-collapse-item {
+    background: #F1F5F9;
+    border-radius: 8px !important;
+    margin-bottom: 16px;
+    border: 1px solid #D4D4D4 !important;
+    overflow: hidden;
+}
+
+[data-theme="dark"] .faq-collapse .ant-collapse-item {
+    /* background: #181e2d; */
+    background-color: transparent;
+    border: 1px solid #2E2E2E !important;
+}
+[data-theme="dark"] .faq-collapse .ant-collapse-item.ant-collapse-item-active{
+    background-color: #111726;
+}
+
+.faq-collapse .ant-collapse-header {
+    color: #000 !important;
+    font-weight: 500;
+    padding: 16px 20px !important;
+    align-items: center !important;
+}
+[data-theme="dark"] .faq-collapse .ant-collapse-header {
+    color: #fff !important;
+}
+
+.faq-collapse .ant-collapse-content {
+    background: transparent;    
+    color: #000;
+    border-top: 1px solid transparent;
+}
+[data-theme="dark"] .faq-collapse .ant-collapse-content {
+    color: #fff;
+    /* border-top: 1px solid #363c49; */
+}
+[data-theme="light"] .faq-collapse .ant-collapse-content p{
+    margin-top: 0;
+}
+.faq-collapse .ant-collapse-content-box,
+:where(.css-dev-only-do-not-override-r7hnw7).ant-collapse .ant-collapse-content>.ant-collapse-content-box {
+    padding: 16px 22px;
+    font-family: var(--base-font-family);
+    font-size: 14px;
+    line-height: 1.4;
+    color: rgba(0, 0, 0, 0.5);
+}
+[data-theme="dark"] .faq-collapse .ant-collapse-content-box {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* --- Expand icon: down when closed, up when open --- */
+
+/* default (collapsed) */
+.faq-collapse .ant-collapse-header .ant-collapse-expand-icon svg,
+.faq-collapse .ant-collapse-header .ant-collapse-arrow svg {
+  transition: transform 0.3s;
+  transform: rotate(90deg) !important;        /* DOWN */
+}
+
+/* active (open) */
+.faq-collapse .ant-collapse-item-active > .ant-collapse-header .ant-collapse-expand-icon svg,
+.faq-collapse .ant-collapse-item-active > .ant-collapse-header .ant-collapse-arrow svg {
+  transform: rotate(-90deg) !important;       /* UP */
+}
+
+/* (optional) keep your color overrides */
+.faq-collapse .ant-collapse-expand-icon svg path,
+.faq-collapse .ant-collapse-arrow svg path {
+  color: #000 !important;
+}
+[data-theme="dark"] .faq-collapse .ant-collapse-expand-icon svg path,
+[data-theme="dark"] .faq-collapse .ant-collapse-arrow svg path {
+  color: #fff !important;
+}
+
+.faqs-section .ant-collapse-content-box,
+:where(.css-dev-only-do-not-override-r7hnw7).ant-collapse .ant-collapse-content>.ant-collapse-content-box{
+    padding-top: 0;
+}
+.faqs-section .ant-collapse-content-box p{
+    margin: 0;
+}
+:where(.css-dev-only-do-not-override-r7hnw7).ant-collapse>.ant-collapse-item >.ant-collapse-header .ant-collapse-header-text{
+    font-family: var(--base-font-family);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* .faq-collapse .ant-collapse-item{
+box-sizing: border-box;
+border: 1px solid #2E2E2E;
+} */
+@media (max-width: 500px){
+    :where(.css-dev-only-do-not-override-r7hnw7).ant-collapse>.ant-collapse-item >.ant-collapse-header .ant-collapse-header-text{
+        font-size: 14px;
+    }   
+    :where(.css-dev-only-do-not-override-r7hnw7).ant-collapse>.ant-collapse-item.ant-collapse-item-active >.ant-collapse-header .ant-collapse-header-text{
+        font-size: 20px;
+    }    
+    .faqs-section{
+        padding-bottom: 40px;
+    }
+}

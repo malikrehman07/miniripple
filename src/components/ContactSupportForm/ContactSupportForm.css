@@ -1,0 +1,76 @@
+:root {
+    /* Light theme colors */
+    --form-bg-light: #ffffff;
+    --form-border-light: rgba(0, 0, 0, 0.1);
+    --form-text-light: #333333;
+    --form-placeholder-light: #6b7280;
+    --form-input-bg-light: #f9fafb;
+    --form-input-border-light: rgba(0, 0, 0, 0.1);
+    
+    /* Dark theme colors */
+    --form-bg-dark: #0a1120;
+    --form-border-dark: rgba(255, 255, 255, 0.2);
+    --form-text-dark: #ffffff;
+    --form-placeholder-dark: #9F9FA9;
+    --form-input-bg-dark: rgba(255, 255, 255, 0.05);
+    --form-input-border-dark: rgba(255, 255, 255, 0.2);
+}
+
+.contact-support-form{
+    padding: 5rem 0;
+}
+
+.contact-support-form .h3{
+    margin: 8px 0;
+}
+.contact-support-form .h3 + .p{
+    margin: 0 0 40px 0;
+}
+
+.contact-support-form .form-area{
+    /* margin-top: 2rem; */
+}
+
+.contact-support-form .content{
+    border-radius: 14px;
+    background-color: var(--form-bg-light);
+    border: 1px solid var(--form-border-light);
+    padding: 40px 45px;
+}
+[data-theme="dark"] .contact-support-form .content{
+    background-color: var(--form-bg-dark);
+    border: 1px solid var(--form-border-dark);
+}
+
+.contact-support-form .form-area input[type="text"],
+.contact-support-form .form-area input[type="email"],
+.contact-support-form .form-area input[type="number"],
+.contact-support-form .form-area textarea{
+    /* border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2); */
+    color: #000;
+    background: var(--form-input-bg-light);
+    border: 1px solid var(--form-input-border-light);
+    
+    border-radius: 5px;
+}
+[data-theme="dark"] .contact-support-form .form-area input[type="text"],
+[data-theme="dark"] .contact-support-form .form-area input[type="email"],
+[data-theme="dark"] .contact-support-form .form-area input[type="number"],
+[data-theme="dark"] .contact-support-form .form-area textarea{
+    background: var(--form-input-bg-dark);
+    border: 1px solid var(--form-input-border-dark);
+    color: #fff;
+}
+
+.contact-support-form .form-area input[type="text"]::placeholder,
+.contact-support-form .form-area input[type="email"]::placeholder,
+.contact-support-form .form-area input[type="number"]::placeholder,
+.contact-support-form .form-area textarea::placeholder{
+    color: #9F9FA9;
+}
+.contact-support-form .form-area{
+    color: #9F9FA9;
+    font: semibold var(--font-16)/1 var(--base-font-family);
+}

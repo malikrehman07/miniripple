@@ -1,0 +1,31 @@
+.simplified-security-section{
+    padding: 5rem 0;
+    background-color: var(--bg-color-1);
+}
+
+.simplified-security-section .h2{
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.simplified-security-section  .p{
+    max-width: 510px;
+}
+.simplified-security-section  .content{
+    margin-bottom: 3.125rem;
+}
+.micro-content-wrap{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 1.875rem;
+}
+.micro-content-wrap .icon-svg{
+    padding-inline-end: 10px;
+}
+.simplified-security-section  .micro-content .h4{
+    margin: 0 0 12px; 
+}
+.simplified-security-section  .micro-content .p{
+    margin: 0;
+}

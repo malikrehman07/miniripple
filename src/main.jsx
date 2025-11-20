@@ -1,0 +1,23 @@
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App.jsx";
+
+import { AuthProvider } from "./middlewares/authContext";
+import { DomainProvider } from "./helper/DomainContext";
+import { Provider } from "react-redux";
+import store from "./redux/store";
+import { ThemeProvider } from "./contexts/ThemeContext";
+createRoot(document.getElementById("root")).render(
+    <StrictMode>
+        <Provider store={store}>
+            <AuthProvider>
+                <DomainProvider>
+                    <ThemeProvider>
+                    <App />
+                    </ThemeProvider>
+                </DomainProvider>
+            </AuthProvider>
+        </Provider>
+    </StrictMode>,
+);

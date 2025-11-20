@@ -1,0 +1,34 @@
+.quickly-find-answers-section{
+    padding: 5rem 0;
+    background-color: var(--bg-color-1);
+}
+
+.quickly-find-answers-section .h2{
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.quickly-find-answers-section  .p{
+    max-width: 510px;
+}
+.quickly-find-answers-section  .content{
+    margin-bottom: 3.125rem;
+}
+.quickly-find-answers-section .micro-content .p{
+    max-width: 300px;
+}
+.micro-content-wrap{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 1.875rem;
+}
+.micro-content-wrap .icon-svg{
+    padding-inline-end: 10px;
+}
+.quickly-find-answers-section  .micro-content .h4{
+    margin: 0 0 12px; 
+}
+.quickly-find-answers-section  .micro-content .p{
+    margin: 0;
+}

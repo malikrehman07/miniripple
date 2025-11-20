@@ -1,0 +1,104 @@
+.hero-section{
+    padding: 7.5rem 0;
+    text-align: center;
+}
+.hero-section .h2{
+    font-size: 70px;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+.hero-section .p{
+    margin-bottom: 30px;
+}
+
+.hero-section .content{
+    border-radius: 15px;
+    padding: 1px;
+    background: #f4f8fe;
+    position: relative;
+}
+[data-theme="dark"] .hero-section .content{
+    background: linear-gradient(to bottom, rgba(161, 161, 161, 0.2), #050c1c) ;
+}
+.hero-section .content-wrap{
+    border-radius: 15px;
+    padding: 2rem;
+    background: linear-gradient(to bottom, rgba(72, 144, 239,0.5), transparent);
+    min-height: 440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    /* border: 1px solid #fff; */
+}
+[data-theme="dark"] .hero-section .content-wrap{
+    background: linear-gradient(to bottom, #181e2d, #050c1c);
+}
+.hero-section .dotted-pattern{
+    position: absolute;
+    top: 10%;
+    left: 9%;
+}
+.hero-section .line-pattern_1{
+    position: absolute;
+    top: 10%;
+    right: 9%;
+}
+.hero-section .line-pattern_2{
+    position: absolute;
+    bottom: 10%;
+    left: 9%;
+}
+.hero-section .circle-pattern_1{
+    position: absolute;
+    bottom: 30%;
+    left: 20%;
+}
+.hero-section .circle-pattern_2{
+    position: absolute;
+    bottom: 16%;
+    right: 5%;
+}
+
+@media (max-width: 1025px) {
+    .hero-section .h2{
+        font-size: 50px;
+    }  
+}
+@media (max-width:500px){
+    .hero-section{
+        padding: 40px 0;
+    }
+    .hero-section .h2{
+        font-size: 32px;
+    }
+    .hero-section .line-pattern_1 svg{
+        width: 35px;
+        height: auto;
+    }
+    .hero-section .dotted-pattern svg{
+        width: 100px;
+        height: auto;
+        opacity: 0.4;
+    }
+    .hero-section .line-pattern_2 {
+        position: absolute;
+        bottom: 10%;
+        left: 6%;
+    }
+    .hero-section .line-pattern_2 svg{
+        width: auto;
+        height: 55px;
+    }
+    .hero-section .circle-pattern_1 svg {
+        width: 50px;
+        height: auto;
+        opacity: 0.4;
+    }
+    
+    .hero-section .circle-pattern_2 svg {
+        width: 50px;
+        height: auto;
+    }
+}

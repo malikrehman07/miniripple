@@ -1,0 +1,72 @@
+/* src/pages/Pricing/Pricing.css */
+.pricing-page {
+    min-height: 100vh;
+}
+.pricing-page .intro-section{
+    padding-bottom: 120px;
+}
+.pricing-page .intro-section .content{
+    max-width: 1040px;
+}
+.pricing-page .intro-section .content .p{
+    max-width: 600px;
+    margin: auto auto 50px auto;
+}
+.pricing-plans .content{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.pricing-plans .h2{
+    margin-top: 12px;
+    margin-bottom: 20px;
+    font-size: 45px;
+}
+/* Add any additional styling as needed */
+.text-center {
+    text-align: center;
+}
+
+.simplified-security-section{
+    padding: 5rem 0;
+    background-color: var(--bg-color-1);
+}
+
+.simplified-security-section .h2{
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.simplified-security-section  .p{
+    max-width: 510px;
+}
+.simplified-security-section  .content{
+    margin-bottom: 3.125rem;
+}
+.micro-content-wrap{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 1.875rem;
+}
+.micro-content-wrap .icon-svg{
+    padding-inline-end: 10px;
+}
+.simplified-security-section  .micro-content .h4{
+    margin: 0 0 12px; 
+}
+.simplified-security-section  .micro-content .p{
+    margin: 0;
+}
+
+
+@media (min-width:1024px){
+    .simplified-security-section .content-area{
+        padding-left: 4rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .pricing-plans .h2{
+        font-size: 32px;
+    }
+}
