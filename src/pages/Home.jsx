@@ -97,10 +97,10 @@ const Home = () => {
         title={`Powerful Traffic Protection for Any Online Business`}
         description={`MiniRipple is built to protect a wide range of industries from online threats..`}
         data={[
-          { title: "SaaS & Tech Platforms", description: "Keep your platform safe from risky IPs, VPN traffic, and fake sign-ups.", icon: <IconSass />, lg: 6, md: 12, sm: { span: 24 } },
-          { title: "Media & Publishing", description: "Filter out bots and invalid clicks to protect ad revenue.", icon: <IconMediaPublishing />, lg: 6, md: 12, sm: { span: 24 } },
-          { title: "Gaming & Streaming", description: "Detect cheats, exploits, and harmful visitors.", icon: <IconGamingStreaming />, lg: 6, md: 12, sm: { span: 24 } },
-          { title: "Marketplaces and Classifieds", description: "Stop fake buyers/sellers and fraudulent listings.", icon: <IconMarketplace />, lg: 6, md: 12, sm: { span: 24 } },
+          { title: "For SaaS", description: "Block bots from signing up and reduce spam accounts.", icon: <IconSass />, lg: 6, md: 12, sm: { span: 24 } },
+          { title: "For Marketers", description: "Detect click fraud and protect your PPC campaigns instantly.", icon: <IconMediaPublishing />, lg: 6, md: 12, sm: { span: 24 } },
+          { title: "For Streaming", description: "Detect cheats, exploits, and harmful visitors.", icon: <IconGamingStreaming />, lg: 6, md: 12, sm: { span: 24 } },
+          { title: "For Agencies", description: "Deliver transparent performance reports to clients.", icon: <IconMarketplace />, lg: 6, md: 12, sm: { span: 24 } },
           { title: "E-Commerce Stores", description: "Eliminate fake orders and fraudulent checkouts.", icon: <IconEStore />, lg: 8, md: 12, sm: { span: 24 } },
           { title: "Ad Protection", description: "Remove invalid clicks, bots, and impression fraud.", icon: <IconMediaPublishing />, lg: 8, md: 12, sm: { span: 24 } },
           { title: "Digital Advertisers", description: "Ensure ads reach real audiences, not bots.", icon: <IconDigitalAdvertisers />, lg: 8, md: 12, sm: { span: 24 } },

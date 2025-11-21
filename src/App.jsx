@@ -64,6 +64,7 @@ import Faqs from "./pages/Faqs";
 import ReferralProgram from "./pages/ReferralProgram";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfUse from "./pages/Termsofuse";
+import Blogs from "./pages/Blogs";
 
 /* -------------------------------------------- */
 /* Public Layout Shell (Header/Footer toggling) */
@@ -134,6 +135,7 @@ const App = () => (
             <Route path="/referral" element={<ReferralProgram />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-use" element={<TermsOfUse />} />
+            <Route path="/blogs" element={<Blogs />} />
 
             {/* ----------------------------- */}
             {/* Auth Routes                   */}

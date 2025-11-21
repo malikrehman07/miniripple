@@ -93,7 +93,7 @@ export default function Footer() {
                     </AnimFadeUp>
                     <AnimFadeUp>
                       <ul>
-                        <li><Link to="/features/bot-protection">Blog & Insights</Link></li>
+                        <li><Link to="/blogs">Blog & Insights</Link></li>
                         <li><Link to="/support">Help Center</Link></li>
                         <li><Link to="/faqs">FAQs</Link></li>
                         <li><Link to="/features/analytics">Security Reports</Link></li>
