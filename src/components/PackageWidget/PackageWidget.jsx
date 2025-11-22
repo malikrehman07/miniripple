@@ -24,7 +24,7 @@ export default function PackageWidget({icon,title, description, price, crossPric
                 <AnimFadeIn delay={0.6}>
                 <div className="package-widget--action">
                     <Button block type="primary" shape="round" size="large" onClick={() => navigate('/sign-up')}>
-                        Start Free Trail
+                        Subscribe
                     </Button>
                 </div>
                 </AnimFadeIn>

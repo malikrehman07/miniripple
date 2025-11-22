@@ -46,7 +46,7 @@ const Home = () => {
             {/* Get Started -> sign up route from App.jsx */}
             <Link to="/sign-up" aria-label="Get Started">
               <Button type="primary" shape="round" size="large">
-                Start Free Trail
+                Subscribe
               </Button>
             </Link>
           </div>
